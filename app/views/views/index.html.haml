@@ -2,10 +2,10 @@
   %p.header__title SECURUS
   %p.header__sub-title - EST . 1996 . JPN -
   .header__btn
-    = link_to 'ABOUT', "#", class: "header__btn-about"
-    = link_to 'PRODUCTS', "#", class: "header__btn-products"
-    = link_to 'FORM', "#", class: "header__btn-form"
-    = link_to 'SNS', "#", class: "header__btn-sns"
+    = link_to 'ABOUT', about_views_path, class: "header__btn-about"
+    = link_to 'PRODUCTS', products_path, class: "header__btn-products"
+    = link_to 'FORM', form_views_path, class: "header__btn-form"
+    = link_to 'SNS', users_path, class: "header__btn-mypage"
 .main
   = image_tag("/assets/top-1.jpeg", class: "main-1")
   = image_tag("/assets/top-2.jpeg", class: "main-2")

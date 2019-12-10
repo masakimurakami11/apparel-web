@@ -13,6 +13,10 @@
  *= require_tree .
  *= require_self
  */
-
- @import 'views';
  @import 'reset';
+ @import 'views';
+ @import 'header';
+ @import 'about';
+ @import 'products';
+ @import 'form';
+ @import 'mypage';
