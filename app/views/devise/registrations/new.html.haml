@@ -1,0 +1,31 @@
+.main
+  = image_tag("/assets/top-1.jpeg", class: "main-1")
+  = image_tag("/assets/top-2.jpeg", class: "main-2")
+  = image_tag("/assets/top-3.jpeg", class: "main-3")
+  = image_tag("/assets/top-4.jpeg", class: "main-4")
+.gray
+.sign-up
+  %h2.sign-up-title Sign up
+  = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+    = render "devise/shared/error_messages", resource: resource
+    .field-email
+      = f.label :email
+      %br
+      = f.email_field :email, autofocus: true, autocomplete: "email"
+    .field-password
+      = f.label :password
+      - if @minimum_password_length
+        %em
+          (#{@minimum_password_length} characters minimum)
+      %br
+      = f.password_field :password, autocomplete: "new-password"
+    .field-password-2
+      = f.label :password_confirmation
+      %br
+      = f.password_field :password_confirmation, autocomplete: "new-password"
+    .actions-sign-up
+      = f.submit "Sign up"
+    = link_to "Top page", root_path,class: 'top-btn'
+  = render "devise/shared/links"
+
+= javascript_include_tag 'views.js'

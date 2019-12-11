@@ -1,3 +1,12 @@
-= render partial: 'layouts/header'
+= render partial: 'layouts/header-white'
 
 .products
+  .products-search-space
+  .products-space
+    - @products.each do |product|
+      = link_to root_path, class: 'product' do
+        = image_tag("#{product.images[0].image}", class: 'product-image')
+        .product-name
+          = product.name
+        .product-price
+          = " ¥ #{product.price.to_s(:delimited)}"

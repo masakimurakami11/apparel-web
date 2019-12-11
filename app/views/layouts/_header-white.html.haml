@@ -1,0 +1,16 @@
+.header-white
+  = link_to 'SECURUS', root_path, class: "header-white__title"
+  %p.header-white__sub-title - MAKE THE STREET -
+  .header-white__btn
+    - if user_signed_in?
+      = link_to 'ABOUT', about_views_path, class: "header-white__btn-about"
+      = link_to 'PRODUCTS', products_path, class: "header-white__btn-products"
+      = link_to 'FORM', form_views_path, class: "header-white__btn-form"
+      = link_to 'MYPAGE', users_path, class: "header-white__btn-mypage"
+    - else
+      = link_to 'ABOUT', about_views_path, class: "header-white__btn-about-1"
+      = link_to 'PRODUCTS', products_path, class: "header-white__btn-products-1"
+      = link_to 'FORM', form_views_path, class: "header-white__btn-form-1"
+      = link_to 'SIGN-UP', new_user_registration_path, class: "header-white__btn-signup"
+      = link_to 'LOG-IN', new_user_session_path , class: "header-white__btn-login"
+= javascript_include_tag 'header-white.js'
