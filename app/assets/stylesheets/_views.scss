@@ -8,7 +8,6 @@ body{
   color: #ffffff;
   font-family: 'Ludica Sans Unicode';
   -webkit-font-smoothing: antialiased;
-  overflow: hidden;
 }
 
 .header{
@@ -25,7 +24,6 @@ body{
     width: 80vw;
     float: left;
     font-size: 15vmin;
-    // padding-top: 0.5vh;
     text-align: center;
     display: none;
   } 
@@ -43,7 +41,6 @@ body{
     width: 80vw;
     float: left;
     padding-top: 5vh;
-    display: none;
     .header__btn-about{
       height: 6vh;
       width: 20vw;
@@ -53,6 +50,7 @@ body{
       font-size: 3vmin;
       color: #ffffff;
       text-decoration: none;
+      display: none;
     }
     .header__btn-products{
       height: 6vh;
@@ -63,6 +61,7 @@ body{
       font-size: 3vmin;
       color: #ffffff;
       text-decoration: none;
+      display: none;
     }
     .header__btn-form{
       height: 6vh;
@@ -73,6 +72,7 @@ body{
       font-size: 3vmin;
       color: #ffffff;
       text-decoration: none;
+      display: none;
     }
     .header__btn-mypage{
       height: 6vh;
@@ -83,6 +83,62 @@ body{
       font-size: 3vmin;
       color: #ffffff;
       text-decoration: none;
+      display: none;
+    }
+    .header__btn-about-1{
+      height: 6vh;
+      width: 16vw;
+      float: left;
+      text-align: center;
+      line-height: 6vh;
+      font-size: 3vmin;
+      color: #ffffff;
+      text-decoration: none;
+      display: none;
+    }
+    .header__btn-products-1{
+      height: 6vh;
+      width: 16vw;
+      float: left;
+      text-align: center;
+      line-height: 6vh;
+      font-size: 3vmin;
+      color: #ffffff;
+      text-decoration: none;
+      display: none;
+    }
+    .header__btn-form-1{
+      height: 6vh;
+      width: 16vw;
+      float: left;
+      text-align: center;
+      line-height: 6vh;
+      font-size: 3vmin;
+      color: #ffffff;
+      text-decoration: none;
+      display: none;
+    }
+    .header__btn-signup{
+      height: 6vh;
+      width: 16vw;
+      float: left;
+      text-align: center;
+      line-height: 6vh;
+      font-size: 3vmin;
+      color: #ffffff;
+      text-decoration: none;
+      display: none;
+    }
+    .header__btn-login{
+      height: 6vh;
+      width: 16vw;
+      float: left;
+      text-align: center;
+      line-height: 6vh;
+      font-size: 3vmin;
+      color: #ffffff;
+      text-decoration: none;
+      display: none;
     }
   }
 }

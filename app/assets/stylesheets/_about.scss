@@ -1,5 +1,33 @@
+.left-images{
+  height: 100vh;
+  width: 20vw;
+  float: left;
+}
 .about{
   height: 100vh;
+  width: 60vw;
+  float: left;
+  }
+  .about-title{
+    width: 20vw;
+    font-size: 6vmin;
+    margin: 23vh 0 0 20vw;
+    text-align: center;
+    color: black;
+    display: none;
+  }
+  .about-description{
+    width: 40vw;
+    font-size: 2.5vmin;
+    margin: 5vh 0 0 10vw;
+    text-align: center;
+    color: black;
+    display: none;
+  }
+
+.about-2{
+  height: 100vh;
   width: 100vw;
-  background-color: burlywood;
+  float: left;
+  background-color: salmon;
 }

@@ -1,14 +1,23 @@
 .header
   %p.header__title SECURUS
-  %p.header__sub-title - EST . 1996 . JPN -
+  %p.header__sub-title - MAKE THE STREET -
   .header__btn
-    = link_to 'ABOUT', about_views_path, class: "header__btn-about"
-    = link_to 'PRODUCTS', products_path, class: "header__btn-products"
-    = link_to 'FORM', form_views_path, class: "header__btn-form"
-    = link_to 'SNS', users_path, class: "header__btn-mypage"
+    - if user_signed_in?
+      = link_to 'ABOUT', about_views_path, class: "header__btn-about"
+      = link_to 'PRODUCTS', products_path, class: "header__btn-products"
+      = link_to 'FORM', form_views_path, class: "header__btn-form"
+      = link_to 'MYPAGE', users_path, class: "header__btn-mypage"
+    - else
+      = link_to 'ABOUT', about_views_path, class: "header__btn-about-1"
+      = link_to 'PRODUCTS', products_path, class: "header__btn-products-1"
+      = link_to 'FORM', form_views_path, class: "header__btn-form-1"
+      = link_to 'SIGN-UP', new_user_registration_path, class: "header__btn-signup"
+      = link_to 'LOG-IN', new_user_session_path, class: "header__btn-login"
 .main
   = image_tag("/assets/top-1.jpeg", class: "main-1")
   = image_tag("/assets/top-2.jpeg", class: "main-2")
   = image_tag("/assets/top-3.jpeg", class: "main-3")
   = image_tag("/assets/top-4.jpeg", class: "main-4")
 .gray
+
+= javascript_include_tag 'views.js'

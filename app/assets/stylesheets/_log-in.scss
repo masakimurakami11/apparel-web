@@ -1,0 +1,47 @@
+.log-in{
+  height: 100vh;
+  width: 60vw;
+  position: fixed;
+  top: 0;
+  left: 20vw;
+  z-index: 2;
+  }
+  .log-in-title{
+    width: 20vw;
+    font-size: 6vmin;
+    margin: 23vh 0 0 20vw;
+    text-align: center;
+  }
+  .field-email-1{
+    width: 40vw;
+    font-size: 2.5vmin;
+    margin: 5vh 0 0 10vw;
+    text-align: center;
+  }
+  .field-password-1{
+    width: 40vw;
+    font-size: 2.5vmin;
+    margin: 5vh 0 0 10vw;
+    text-align: center;
+  }
+  .field-remenber{
+    width: 40vw;
+    font-size: 2.5vmin;
+    margin: 5vh 0 0 10vw;
+    text-align: center;
+  }
+  .actions-log-in{
+    width: 40vw;
+    font-size: 2.5vmin;
+    margin: 5vh 0 0 10vw;
+    text-align: center;
+  }
+  .top-btn{
+    width: 40vw;
+    font-size: 2.5vmin;
+    margin: 5vh 0 0 10vw;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+  }

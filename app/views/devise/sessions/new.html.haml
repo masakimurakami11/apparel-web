@@ -1,0 +1,27 @@
+.main
+  = image_tag("/assets/top-1.jpeg", class: "main-1")
+  = image_tag("/assets/top-2.jpeg", class: "main-2")
+  = image_tag("/assets/top-3.jpeg", class: "main-3")
+  = image_tag("/assets/top-4.jpeg", class: "main-4")
+.gray
+.log-in
+  %h2.log-in-title Log in
+  = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+    .field-email-1
+      = f.label :email
+      %br
+      = f.email_field :email, autofocus: true, autocomplete: "email"
+    .field-password-1
+      = f.label :password
+      %br
+      = f.password_field :password, autocomplete: "current-password"
+    - if devise_mapping.rememberable?
+      .field-remenber
+        = f.check_box :remember_me
+        = f.label :remember_me
+    .actions-log-in
+      = f.submit "Log in"
+    = link_to "Top page", root_path,class: 'top-btn'
+  = render "devise/shared/links"
+
+= javascript_include_tag 'views.js'
