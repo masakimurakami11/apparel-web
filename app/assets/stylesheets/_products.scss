@@ -4,10 +4,10 @@
   background-color: black;
   }
   .products-search-space{
-    height: 175vh;
+    height: 150vh;
     width: 20vw;
     float: left;
-    background-color: aquamarine;
+    background-color: #ffffff;
     margin-top: 25vh
     }
   .products-space{
@@ -18,32 +18,33 @@
     }
     .product{
       height: 35vh;
-      width: 20vw;
+      width: 19.5vw;
       float: left;
-      margin: 3vh 0 0 5vw;
+      margin: 3vh 0 0 5.5vw;
       }
       .product-image{
-        height: 30vh;
-        width: 20vw;
+        height: 27.4vh;
+        width: 19.5vw;
         float: left;
         border: #ffffff solid 5px;
         background-size: 100% 100%;
       }
       .product-name{
-        height: 2.5vh;
-        width: 20vw;
+        height: 3.8vh;
+        width: 19.5vw;
         float: left;
         color: #ffffff;
         text-align: center;
-        line-height: 2.5vh;
+        line-height: 3.8vh;
+        padding-top: 0.5vh;
         font-size: 2.5vmin;
       }
       .product-price{
-        height: 2.5vh;
-        width: 20vw;
+        height: 3.8vh;
+        width: 19.5vw;
         float: left;
         color: #ffffff;
         text-align: center;
-        line-height: 2.5vh;
+        line-height: 3.8vh;
         font-size: 2.5vmin;
       }

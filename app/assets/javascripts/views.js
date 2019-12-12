@@ -1,6 +1,6 @@
 $(function(){
   $(window).load(function(){
-    // $("body").css('overflow', 'hidden');
+    $("body").css('overflow', 'hidden');
     setTimeout(function(){
       $('.main-1').fadeIn(4000).animate({'top':'0','left':'0'},{
         duration:2000,

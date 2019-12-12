@@ -10,7 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_11_051107) do
+ActiveRecord::Schema.define(version: 2019_12_12_062402) do
+
+  create_table "categories", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "category", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "colors", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "color", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "images", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "image"
@@ -21,9 +33,29 @@ ActiveRecord::Schema.define(version: 2019_12_11_051107) do
   end
 
   create_table "products", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "name"
-    t.text "description"
-    t.integer "price"
+    t.string "name", null: false
+    t.text "description", null: false
+    t.integer "price", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "category_id"
+    t.bigint "status_id"
+    t.bigint "color_id"
+    t.bigint "size_id"
+    t.index ["category_id"], name: "index_products_on_category_id"
+    t.index ["color_id"], name: "index_products_on_color_id"
+    t.index ["size_id"], name: "index_products_on_size_id"
+    t.index ["status_id"], name: "index_products_on_status_id"
+  end
+
+  create_table "sizes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "size", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "statuses", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "status", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -41,4 +73,8 @@ ActiveRecord::Schema.define(version: 2019_12_11_051107) do
   end
 
   add_foreign_key "images", "products"
+  add_foreign_key "products", "categories"
+  add_foreign_key "products", "colors"
+  add_foreign_key "products", "sizes"
+  add_foreign_key "products", "statuses"
 end
