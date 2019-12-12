@@ -5,7 +5,7 @@ class ViewsController < ApplicationController
   def about
   end
 
-  def form
+  def news
   end
 
   def mypage

@@ -7,8 +7,17 @@
     height: 150vh;
     width: 20vw;
     float: left;
-    background-color: #ffffff;
-    margin-top: 25vh
+    margin-top: 22vh
+    }
+    .product-name-search{
+      height: 3.8vh;
+      width: 19.5vw;
+      float: left;
+      color: #ffffff;
+      text-align: center;
+      line-height: 3.8vh;
+      margin-top: 3vh;
+      font-size: 2.5vmin;
     }
   .products-space{
     height: 175vh;
@@ -26,7 +35,7 @@
         height: 27.4vh;
         width: 19.5vw;
         float: left;
-        border: #ffffff solid 5px;
+        border: #ffffff solid 1px;
         background-size: 100% 100%;
       }
       .product-name{
