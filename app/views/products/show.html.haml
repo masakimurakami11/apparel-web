@@ -1,3 +1,28 @@
+= render partial: 'layouts/header-black'
+
 .product-detail
   .product-detail__image-space
-    
+    .product-detail__image-first
+      = image_tag("#{@product.images[0].image}", class: 'product-image-1')
+    .product-detail__image-other
+      - @images[0..3].each do |image|
+        = image_tag("#{image.image}", class: 'product-image-2')
+  .product-detail__select
+    .product-detail__select-name
+      = @product.name
+    .product-detail__select-description
+      = @product.description
+    .product-detail__select-price
+      = " ¥ #{@product.price.to_s(:delimited)} (+tax)"
+    = form_with model: @order,url: create_order_products_path, local: true do |f|
+      .count
+        %p.count-name COUNT
+        = f.select :count, [["--", 0],["1", 1],["2", 2],["3",3],["4",4],["5",5],["6",6],["7",7],["8",8],["9",9]], {}, class: 'count-space'
+      .size
+        %p.size-name SIZE
+        = f.select :size, [["--", 0],["S", 1],["M", 2],["L",3],["LL",4]], {}, class: 'size-space'
+      .color
+        %p.color-name COLOR
+        = f.select :color, [["--", 0],["white", 1],["black", 2]], {}, class: 'color-space'
+        = f.hidden_field :product_id, value: @product.id
+        = f.submit 'Add to cart', class: 'cart-btn'

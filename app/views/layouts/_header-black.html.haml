@@ -3,14 +3,15 @@
   %p.header-black__sub-title - MAKE THE STREET -
   .header-black__btn
     - if user_signed_in?
-      = link_to 'ABOUT', about_views_path, class: "header-black__btn-about"
+      = link_to 'NEWS', news_views_path, class: "header-black__btn-news"
       = link_to 'PRODUCTS', products_path, class: "header-black__btn-products"
-      = link_to 'FORM', form_views_path, class: "header-black__btn-form"
+      = link_to 'ABOUT', about_views_path, class: "header-black__btn-about"
       = link_to 'MYPAGE', users_path, class: "header-black__btn-mypage"
+      = link_to 'CART', cart_products_path, class: "header-black__btn-cart"
     - else
-      = link_to 'ABOUT', about_views_path, class: "header-black__btn-about-1"
-      = link_to 'PRODUCTS', products_path, class: "header-black__btn-products-1"
-      = link_to 'FORM', form_views_path, class: "header-black__btn-form-1"
+      = link_to 'NEWS', news_views_path, class: "header-black__btn-news"
+      = link_to 'PRODUCTS', products_path, class: "header-black__btn-products"
+      = link_to 'ABOUT', about_views_path, class: "header-black__btn-about"
       = link_to 'SIGN-UP', new_user_registration_path, class: "header-black__btn-signup"
       = link_to 'LOG-IN', new_user_session_path, class: "header-black__btn-login"
 

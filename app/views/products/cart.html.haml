@@ -1,0 +1,33 @@
+= render partial: 'layouts/header-black'
+
+.cart
+  .cart-space
+    - @total_price = 0
+    - @orders.each do |order|
+      .cart-count
+        = " PRODUCT: #{order.product.name} ,　"
+        = " PRICE: ¥#{order.product.price.to_s(:delimited)} ,　"
+        = " COUNT: #{order.count} ,　"
+        = " SIZE: #{order.size} ,　"
+        = " COLOR: #{order.color}"
+        = " =　TOTAL　PRICE: ¥#{(order.product.price * order.count).to_s(:delimited)} "
+        - @total_price += (order.product.price * order.count)
+      .cancel-btn-space
+        = button_to "CANCEL", "#{order.id}", method: :delete , class: "cancel-btn" 
+  .please-scroll
+    - if @orders.length > 2
+      %p
+      ↑　please scroll　↑
+      %p
+      check products!!
+  .total-space
+    .price
+      = " PRICE: 　¥#{@total_price.to_s(:delimited)} "
+    .plus-space
+      = "+"
+    .tax-price
+      = " TAX: 　¥#{(@total_price * 0.1).floor.to_s(:delimited)}"
+    .equal-space
+      = "="
+    .total-price
+      = " TOTAL　PRICE: 　¥#{(@total_price + (@total_price * 0.1)).floor.to_s(:delimited)} "

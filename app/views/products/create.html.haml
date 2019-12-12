@@ -1,0 +1,16 @@
+.product-create
+  %p.order-clear Added to cart
+  .order-name
+    = " PRODUCT: 　#{@order.product.name}"
+  .order-price
+    = " PRICE: 　¥#{@order.product.price.to_s(:delimited)}"
+  .order-count
+    = " COUNT: 　#{@order.count}"
+  .order-size
+    = " SIZE: 　#{@order.size}"
+  .order-color
+    = " COLOR: 　#{@order.color}"
+  .order-total-price
+    = "TOTAL　PRICE: 　¥#{(@order.product.price * @order.count).to_s(:delimited)}"
+  = link_to '→PRODUCTS LIST', products_path, class: 'products-page-back'
+  = link_to '→GO CART', cart_products_path, class: 'cart-page-go'

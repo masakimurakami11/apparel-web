@@ -32,22 +32,20 @@ $(function(){
     $('.header__sub-title').fadeIn(4000);
     },4000);
     setTimeout(function(){
-      $('.header__btn-about').fadeIn(4000);
-      $('.header__btn-about-1').fadeIn(4000);
+      $('.header__btn-news').fadeIn(4000);
     },4500);
     setTimeout(function(){
       $('.header__btn-products').fadeIn(4000);
-      $('.header__btn-products-1').fadeIn(4000);
     },5000);
     setTimeout(function(){
-      $('.header__btn-form').fadeIn(4000);
-      $('.header__btn-form-1').fadeIn(4000);
+      $('.header__btn-about').fadeIn(4000);
     },5500);
     setTimeout(function(){
       $('.header__btn-mypage').fadeIn(4000);
       $('.header__btn-signup').fadeIn(4000);
     },6000);
     setTimeout(function(){
+      $('.header__btn-cart').fadeIn(4000);
       $('.header__btn-login').fadeIn(4000);
     },6500);
   })
