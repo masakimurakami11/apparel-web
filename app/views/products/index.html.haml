@@ -4,7 +4,7 @@
   .products-search-space
   .products-space
     - @products.each do |product|
-      = link_to root_path, class: 'product' do
+      = link_to '/products/:id', class: 'product' do
         = image_tag("#{product.images[0].image}", class: 'product-image')
         .product-name
           = product.name

@@ -23,5 +23,8 @@ $(function(){
     setTimeout(function(){
       $('.header-white__btn-login').fadeIn(1000);
     },1250);
+    setTimeout(function(){
+      $('.product').fadeIn(1000);
+    },1250);
   })
 })
