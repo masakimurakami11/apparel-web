@@ -2,4 +2,120 @@
   height: 100vh;
   width: 100vw;
   background-color: black;
-}
+  position: relative;
+  &__privacy-title{
+    height: 3vh;
+    width: 60vw;
+    margin: 20vh 0 0 20vw;
+    text-align: center;
+    line-height: 3vh;
+    font-size: 3vmin;
+    float: left;
+    display: none;
+  }
+  &__privacy-space{
+    height: 18vh;
+    width: 60vw;
+    margin: 0 0 0 20vw;
+    float: left;
+    position: absolute;
+    top: 23vh;
+    left: -80vw;
+    background-color: #ffffff;
+    display: none;
+    .my-address-btn{
+      height: 14vh;
+      width: 24vw;
+      margin: 2vh 0 0 4vw;
+      float: left;
+      background-color: black;
+      text-align: center;
+      line-height: 14vh;
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 3vmin;
+      display: inline-block;
+    }
+    .my-card-btn{
+      height: 14vh;
+      width: 24vw;
+      margin: 2vh 0 0 4vw;
+      float: left;
+      background-color: black;
+      text-align: center;
+      line-height: 14vh;
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 3vmin;
+      display: inline-block;
+    }
+  }
+  &__history-title{
+    height: 3vh;
+    width: 60vw;
+    margin: 20vh 0 0 20vw;
+    text-align: center;
+    line-height: 3vh;
+    font-size: 3vmin;
+    float: left;
+    display: none;
+  }
+  &__history-space{
+    height: 18vh;
+    width: 60vw;
+    margin: 0 0 0 20vw;
+    float: left;
+    position: absolute;
+    top: 46vh;
+    left: 100vw;
+    display: none;
+    background-color: #ffffff;
+    .order-history-btn{
+      height: 14vh;
+      width: 52vw;
+      margin: 2vh 0 0 4vw;
+      float: left;
+      background-color: black;
+      text-align: center;
+      line-height: 14vh;
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 3vmin;
+      display: inline-block;
+    }
+  }
+  &__logout-title{
+    height: 3vh;
+    width: 60vw;
+    margin: 20vh 0 0 20vw;
+    text-align: center;
+    line-height: 3vh;
+    font-size: 3vmin;
+    float: left;
+    display: none;
+  }
+  &__logout-space{
+    height: 18vh;
+    width: 60vw;
+    margin: 0 0 0 20vw;
+    float: left;
+    position: absolute;
+    top: 69vh;
+    left: -80vw;
+    background-color: #ffffff;
+    display: none;
+    .log-out-btn{
+      height: 14vh;
+      width: 52vw;
+      margin: 2vh 0 0 4vw;
+      float: left;
+      background-color: black;
+      text-align: center;
+      line-height: 14vh;
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 3vmin;
+      display: inline-block;
+    }
+  }
+  }

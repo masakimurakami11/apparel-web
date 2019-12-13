@@ -1,0 +1,70 @@
+.history{
+  height: 100vh;
+  width: 100vw;
+  background-color: #ffffff;
+  float: left;
+  }
+  .history-space{
+    height: 40vh;
+    width: 60vw;
+    margin: 30vh 20vw 0;
+    float: left;
+    overflow: scroll;
+    }
+  .history-count{
+    font-size: 2vmin;
+    text-align: center;
+    color: black;
+    padding: 1.5vh 0 1.5vh 0;
+  }
+  .history-total-space{
+    height: 10vh;
+    width: 60vw;
+    margin: 5vh 20vw 0;
+    float: left;
+    }
+    .history-price{
+      height: 10vh;
+      width: 18vw;
+      float: left;
+      color: black;
+      font-size: 2vmin;
+      text-align: center;
+      line-height: 10vh;
+    }
+    .history-plus-space{
+      height: 10vh;
+      width: 3vw;
+      float: left;
+      color: black;
+      font-size: 3vmin;
+      text-align: center;
+      line-height: 10vh;
+    }
+    .history-tax-price{
+      height: 10vh;
+      width: 18vw;
+      float: left;
+      color: black;
+      font-size: 2vmin;
+      text-align: center;
+      line-height: 10vh;
+    }
+    .history-equal-space{
+      height: 10vh;
+      width: 3vw;
+      float: left;
+      color: black;
+      font-size: 3vmin;
+      text-align: center;
+      line-height: 10vh;
+    }
+    .history-total-price{
+      height: 10vh;
+      width: 18vw;
+      float: left;
+      color: black;
+      font-size: 2vmin;
+      text-align: center;
+      line-height: 10vh;
+    }

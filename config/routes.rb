@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   resources :products, only: [:index, :show, :destroy] do
     collection do
       get 'cart'
+      get 'history'
       post 'create', to: "products#create", as: :create_order
     end
   end
