@@ -18,7 +18,11 @@ class ProductsController < ApplicationController
   end
 
   def cart
-    @orders = Order.where(user_id: current_user.id)
+    @orders = Order.where(user_id: current_user.id, order_status_id: 1)
+  end
+
+  def history
+    @orders = Order.where(user_id: current_user.id, order_status_id: 2)
   end
 
   def destroy

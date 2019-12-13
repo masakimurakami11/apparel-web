@@ -11,6 +11,6 @@
   .order-color
     = " COLOR: 　#{@order.color}"
   .order-total-price
-    = "TOTAL　PRICE: 　¥#{(@order.product.price * @order.count).to_s(:delimited)}"
+    = "TOTAL-PRICE: 　¥#{(@order.product.price * @order.count).to_s(:delimited)}"
   = link_to '→PRODUCTS LIST', products_path, class: 'products-page-back'
   = link_to '→GO CART', cart_products_path, class: 'cart-page-go'
