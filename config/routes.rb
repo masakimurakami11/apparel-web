@@ -17,6 +17,12 @@ Rails.application.routes.draw do
       get 'history'
       post 'create', to: "products#create", as: :create_order
     end
+    resources :pays, only: [:index] do
+      collection do
+        post 'pay'
+        get 'done'
+      end
+    end
   end
   resources :users, only: [:index]
 end
