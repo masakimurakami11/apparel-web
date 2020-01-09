@@ -3,8 +3,8 @@
 .mypage
   %p.mypage__privacy-title PRIVATE-INFORMATION
   .mypage__privacy-space
-    = link_to 'MY-ADDRESS', destroy_user_session_path, class: "my-address-btn"
-    = link_to 'MY-CARD', destroy_user_session_path, class: "my-card-btn"
+    = link_to 'MY-ADDRESS', address_users_path, class: "my-address-btn"
+    -# = link_to 'MY-CARD', destroy_user_session_path, class: "my-card-btn"
   %p.mypage__history-title ORDER-HISTORY
   .mypage__history-space
     = link_to 'ORDER-HISTORY', history_products_path, class: "order-history-btn"

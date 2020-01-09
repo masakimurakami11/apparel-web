@@ -9,8 +9,8 @@
         = " PRICE: ¥#{order.product.price.to_s(:delimited)} ,　"
         = " COUNT: #{order.count} ,　"
         = " SIZE: #{order.size} ,　"
-        = " COLOR: #{order.color}"
-        = " =　TOTAL-PRICE: ¥#{(order.product.price * order.count).to_s(:delimited)} "
+        = " COLOR: #{order.color} 　"
+        = " →　TOTAL-PRICE: ¥#{(order.product.price * order.count).to_s(:delimited)} "
         - @total_price += (order.product.price * order.count)
       .cancel-btn-space
         = button_to "CANCEL", "#{order.id}", method: :delete , class: "cancel-btn" 
@@ -31,3 +31,10 @@
       = "="
     .total-price
       = " TOTAL-PRICE: 　¥#{(@total_price + (@total_price * 0.1)).floor.to_s(:delimited)} "
+  - if @address.length === 0
+    = link_to 'Address Register', address_users_path, class: 'purchase_btn'
+  - else
+    - if @orders.length > 0
+      = link_to 'Purchase', purchase_products_path(@orders), method: :patch, class: 'purchase_btn'
+  -# %form{action: "/products/pay", :method => "post"}
+  -#   %script.payjp-button{"data-key" => "pk_test_027fe68f7b662bdff3d0cf1c", :src => "https://checkout.pay.jp/"}

@@ -1,0 +1,14 @@
+en:
+  enums:
+    order:
+      size:
+        '--': "--"
+        S: 'S'
+        M: 'M'
+        L: 'L'
+        LL: 'LL'
+      color:
+        '--': "--"
+        white: 'white'
+        black: 'black'
+        orange: 'orange'

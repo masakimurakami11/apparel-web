@@ -1,0 +1,168 @@
+$(function(){
+  $(window).load(function(){
+    $('.news-1-2-image').fadeIn(2000)
+      setTimeout(function(){
+        $('.news-1-2-image').fadeOut(2000)
+        $('.news-1-3-image').fadeIn(2000)
+      },4000);
+      setTimeout(function(){
+        $('.news-1-3-image').fadeOut(2000)
+        $('.news-1-4-image').fadeIn(2000)
+      },8000);
+      setTimeout(function(){
+        $('.news-1-4-image').fadeOut(2000)
+      },10000);
+    setInterval(function(){
+      $('.news-1-2-image').fadeIn(2000)
+      setTimeout(function(){
+        $('.news-1-2-image').fadeOut(2000)
+        $('.news-1-3-image').fadeIn(2000)
+      },4000);
+      setTimeout(function(){
+        $('.news-1-3-image').fadeOut(2000)
+        $('.news-1-4-image').fadeIn(2000)
+      },8000);
+      setTimeout(function(){
+        $('.news-1-4-image').fadeOut(2000)
+      },10000);
+    },12000);
+  });
+})
+
+$(function(){
+  $('.news-1').mouseover(function(){
+    $('.news-1-cover').fadeIn(1000)
+    $('.news-1-title').fadeIn(1000)
+  })
+  $('.news-1').mouseleave(function(){
+    $('.news-1-cover').fadeOut(1000)
+    $('.news-1-title').fadeOut(1000)
+  })
+})
+
+$(function(){
+  $(window).load(function(){
+    $('.news-2-2-image').fadeIn(1000)
+      setTimeout(function(){
+        $('.news-2-2-image').fadeOut(1000)
+        $('.news-2-3-image').fadeIn(1000)
+      },2000);
+      setTimeout(function(){
+        $('.news-2-3-image').fadeOut(1000)
+        $('.news-2-4-image').fadeIn(1000)
+      },4000);
+      setTimeout(function(){
+        $('.news-2-4-image').fadeOut(1000)
+      },6000);
+    setInterval(function(){
+      $('.news-2-2-image').fadeIn(1000)
+      setTimeout(function(){
+        $('.news-2-2-image').fadeOut(1000)
+        $('.news-2-3-image').fadeIn(1000)
+      },2000);
+      setTimeout(function(){
+        $('.news-2-3-image').fadeOut(1000)
+        $('.news-2-4-image').fadeIn(1000)
+      },4000);
+      setTimeout(function(){
+        $('.news-2-4-image').fadeOut(1000)
+      },6000);
+    },7000);
+  });
+})
+
+$(function(){
+  $('.news-2').mouseover(function(){
+    $('.news-2-cover').fadeIn(1000)
+    $('.news-2-title').fadeIn(1000)
+  })
+  $('.news-2').mouseleave(function(){
+    $('.news-2-cover').fadeOut(1000)
+    $('.news-2-title').fadeOut(1000)
+  })
+})
+
+
+$(function(){
+  $(window).load(function(){
+    $('.news-3-2-image').fadeIn(500)
+      setTimeout(function(){
+        $('.news-3-2-image').fadeOut(500)
+        $('.news-3-3-image').fadeIn(500)
+      },1000);
+      setTimeout(function(){
+        $('.news-3-3-image').fadeOut(500)
+        $('.news-3-4-image').fadeIn(500)
+      },2000);
+      setTimeout(function(){
+        $('.news-3-4-image').fadeOut(500)
+      },3000);
+    setInterval(function(){
+      $('.news-3-2-image').fadeIn(500)
+      setTimeout(function(){
+        $('.news-3-2-image').fadeOut(500)
+        $('.news-3-3-image').fadeIn(500)
+      },1000);
+      setTimeout(function(){
+        $('.news-3-3-image').fadeOut(500)
+        $('.news-3-4-image').fadeIn(500)
+      },2000);
+      setTimeout(function(){
+        $('.news-3-4-image').fadeOut(500)
+      },3000);
+    },3500);
+  });
+})
+
+
+$(function(){
+  $('.news-3').mouseover(function(){
+    $('.news-3-cover').fadeIn(1000)
+    $('.news-3-title').fadeIn(1000)
+  })
+  $('.news-3').mouseleave(function(){
+    $('.news-3-cover').fadeOut(1000)
+    $('.news-3-title').fadeOut(1000)
+  })
+})
+
+$(function(){
+  $('.news-2').mouseover(function(){
+    $('.news-2-cover').fadeIn(1000)
+    $('.news-2-title').fadeIn(1000)
+  })
+  $('.news-2').mouseleave(function(){
+    $('.news-2-cover').fadeOut(1000)
+    $('.news-2-title').fadeOut(1000)
+  })
+})
+
+
+$(function(){
+  $(window).load(function(){
+    $('.news-4-4-image').fadeIn(250)
+      setTimeout(function(){
+        $('.news-4-4-image').fadeOut(250)
+        $('.news-4-1-image').fadeIn(250)
+      },500);
+    setInterval(function(){
+      $('.news-4-4-image').fadeIn(250)
+      setTimeout(function(){
+        $('.news-4-4-image').fadeOut(250)
+        $('.news-4-1-image').fadeIn(250)
+      },500);
+    },750);
+  });
+})
+
+
+$(function(){
+  $('.news-4').mouseover(function(){
+    $('.news-4-cover').fadeIn(1000)
+    $('.news-4-title').fadeIn(1000)
+  })
+  $('.news-4').mouseleave(function(){
+    $('.news-4-cover').fadeOut(1000)
+    $('.news-4-title').fadeOut(1000)
+  })
+})

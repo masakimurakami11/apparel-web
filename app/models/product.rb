@@ -1,8 +1,8 @@
 class Product < ApplicationRecord
   has_many :images
-  has_many :order
+  has_many :sizes
+  has_many :colors
+  has_many :orders
   belongs_to :category
   belongs_to :status
-  belongs_to :color
-  belongs_to :size
 end

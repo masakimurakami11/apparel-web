@@ -1,0 +1,131 @@
+.address{
+  height: 100vh;
+  width: 60vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  }
+  .address-title{
+    width: 60vw;
+    font-size: 6vmin;
+    margin: 13vh 0 0 20vw;
+    text-align: center;
+  }
+  .address-zip{
+    width: 60vw;
+    font-size: 2.5vmin;
+    margin: 5vh 0 0 20vw;
+    text-align: center;
+    &__label{
+      height: 3.5vh;
+      float: left;
+      margin-left: 18vw;
+      line-height: 3.5vh;
+    }
+    &__span{
+      float: left;
+    }
+    .address-zip-form{
+      width: 15vw;
+      float: left;
+      margin-left: 2vw;
+    }
+  }
+  .address-prefecture{
+    width: 60vw;
+    font-size: 2.5vmin;
+    padding-top: 10vh;
+    margin-left: 20vw;
+    &__label{
+      height: 3.5vh;
+      float: left;
+      margin: 0 2vw 0 18vw;
+      line-height: 3.5vh;
+    }
+    &__span{
+      float: left;
+    }
+  }
+  .address-city-name{
+    width: 60vw;
+    font-size: 2.5vmin;
+    padding-top: 6.5vh;
+    margin-left: 20vw;
+    text-align: center;
+    &__label{
+      height: 3.5vh;
+      float: left;
+      margin-left: 18vw;
+      line-height: 3.5vh;
+    }
+    &__span{
+      float: left;
+    }
+    .address-city-name-form{
+      width: 15vw;
+      float: left;
+      margin-left: 2vw;
+    }
+  }
+  .address-block-name{
+    width: 60vw;
+    font-size: 2.5vmin;
+    padding-top: 10vh;
+    margin-left: 20vw;
+    text-align: center;
+    &__label{
+      height: 3.5vh;
+      float: left;
+      margin-left: 18vw;
+      line-height: 3.5vh;
+    }
+    &__span{
+      float: left;
+    }
+    .address-block-name-form{
+      width: 15vw;
+      float: left;
+      margin-left: 2vw;
+    }
+  }
+  .address-bill-name{
+    width: 60vw;
+    font-size: 2.5vmin;
+    padding-top: 10vh;
+    margin-left: 20vw;
+    text-align: center;
+    &__label{
+      height: 3.5vh;
+      float: left;
+      margin-left: 18vw;
+      line-height: 3.5vh;
+    }
+    &__span{
+      float: left;
+    }
+    .address-bill-name-form{
+      width: 15vw;
+      float: left;
+      margin-left: 2vw;
+    }
+  }
+  .mypage-btn{
+    width: 40vw;
+    font-size: 2.5vmin;
+    margin: 5vh 0 0 30vw;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .address-create-btn{
+    width: 60vw;
+    font-size: 2.5vmin;
+    padding-top: 5vh;
+    margin-left: 20vw;
+    text-align: center;
+    }
+    .address-btn{
+      margin-top: 5vh;
+    }

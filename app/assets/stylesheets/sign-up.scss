@@ -9,30 +9,97 @@
   .sign-up-title{
     width: 20vw;
     font-size: 6vmin;
-    margin: 23vh 0 0 20vw;
+    margin: 0 0 0 20vw;
+    text-align: center;
+  }
+  .field-name{
+    width: 40vw;
+    font-size: 2.5vmin;
+    margin: 3vh 0 0 10vw;
+    text-align: center;
+  }
+  .field-name-2{
+    width: 40vw;
+    font-size: 2.5vmin;
+    margin-left: 15.4vw;
+    text-align: center;
+    display: flex;
+  }
+  .field-name-kana{
+    width: 40vw;
+    font-size: 2.5vmin;
+    margin: 3vh 0 0 10vw;
+    text-align: center;
+  }
+  .field-name-kana-2{
+    width: 40vw;
+    font-size: 2.5vmin;
+    margin-left: 15.4vw;
+    text-align: center;
+    display: flex;
+  }
+  .field-birthday{
+    width: 40vw;
+    font-size: 2.5vmin;
+    margin: 3vh 0 0 10vw;
+    text-align: center;
+    }
+    .birthday-form{
+      width: 40vw;
+      font-size: 2.5vmin;
+      margin-left: 12.2vw;
+      text-align: center;
+      display: flex;
+    }
+  .field-tel{
+    width: 40vw;
+    font-size: 2.5vmin;
+    margin: 3vh 0 0 10vw;
+    text-align: center;
+  }
+  .field-tel-2{
+    width: 40vw;
+    font-size: 2.5vmin;
+    margin-left: 10vw;
     text-align: center;
   }
   .field-email{
+    height: 3vh;
     width: 40vw;
     font-size: 2.5vmin;
-    margin: 5vh 0 0 10vw;
+    margin: 3vh 0 0 10vw;
     text-align: center;
+  }
+  .field-email-2{
+    width: 40vw;
+    font-size: 2.5vmin;
+    margin-left: 10vw;
+    text-align: center;
+
   }
   .field-password{
     width: 40vw;
     font-size: 2.5vmin;
-    margin: 5vh 0 0 10vw;
+    margin: 3vh 0 0 10vw;
     text-align: center;
   }
   .field-password-2{
     width: 40vw;
     font-size: 2.5vmin;
-    margin: 5vh 0 0 10vw;
+    margin: 3vh 0 0 10vw;
     text-align: center;
   }
   .actions-sign-up{
     width: 40vw;
     font-size: 2.5vmin;
-    margin: 5vh 0 0 10vw;
+    margin: 3vh 0 0 10vw;
     text-align: center;
   }
+
+#error_explanation{
+  height: 50vh;
+  width: 30vw;
+  position: fixed;
+  top: 35vh;
+  right: 0;
+}
