@@ -1,0 +1,35 @@
+.main
+  = image_tag("/assets/top-1.jpeg", class: "main-1")
+  = image_tag("/assets/top-2.jpeg", class: "main-2")
+  = image_tag("/assets/top-3.jpeg", class: "main-3")
+  = image_tag("/assets/top-4.jpeg", class: "main-4")
+.gray
+
+.address
+  %p.address-title ADDRESS
+  = form_with model: @address,url: address_create_users_path, local: true do |f|
+    .address-zip
+      %label.address-zip__label
+        郵便番号:
+      = f.text_field :zip, placeholder: '例） 123-4567', class: 'address-zip-form'
+    .address-prefecture
+      %label.address-prefecture__label
+        都道府県:
+      = f.collection_select :prefecture, Prefecture.all, :id, :name, prompt: '---', class: 'address-prefecture-form'
+    .address-city-name
+      %label.address-city-name__label
+        市区町村:
+      = f.text_field :city_name, placeholder: '例）横浜市緑区', class: 'address-city-name-form'
+    .address-block-name
+      %label.address-block-name__label
+        番地:　　
+      = f.text_field :block_name, placeholder: '例）青山1-1-1', class: 'address-block-name-form'
+    .address-bill-name
+      %label.address-bill-name__label
+        建物名:　
+      = f.text_field :bill_name, placeholder: '例）柳ビル103', class: 'address-bill-name-form'
+    .address-create-btn
+      = f.submit 'Save your address', class: 'address-btn'
+    = link_to "My page", users_path,class: 'mypage-btn'
+
+= javascript_include_tag 'views.js'

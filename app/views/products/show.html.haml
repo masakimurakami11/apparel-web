@@ -26,12 +26,13 @@
         = f.select :count, [["--", 0],["1", 1],["2", 2],["3",3],["4",4],["5",5],["6",6],["7",7],["8",8],["9",9]], {}, class: 'count-space'
       .size
         %p.size-name SIZE
-        = f.select :size, [["--", 0],["S", 1],["M", 2],["L",3],["LL",4]], {}, class: 'size-space'
+        = f.select :size, Order.sizes.keys.map {|k| [I18n.t("enums.order.size.#{k}"), k]}, {}, class: 'size-space'
       .color
         %p.color-name COLOR
-        = f.select :color, [["--", 0],["white", 1],["black", 2]], {}, class: 'color-space'
+        = f.select :color, Order.colors.keys.map {|k| [I18n.t("enums.order.color.#{k}"), k]}, {}, class: 'color-space'
       = f.hidden_field :product_id, value: @product.id
       .cart-btn-space
         = f.submit 'Add to cart', class: 'cart-btn'
+
 
 = javascript_include_tag 'product-show.js'
