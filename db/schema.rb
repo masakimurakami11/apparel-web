@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_19_072100) do
+ActiveRecord::Schema.define(version: 2019_12_19_054703) do
 
   create_table "addresses", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "zip", null: false
@@ -54,13 +54,13 @@ ActiveRecord::Schema.define(version: 2019_12_19_072100) do
 
   create_table "orders", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "count", null: false
+    t.string "size", null: false
+    t.string "color", null: false
     t.bigint "product_id"
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "order_status_id", default: 1
-    t.integer "size"
-    t.integer "color"
+    t.bigint "order_status_id"
     t.index ["order_status_id"], name: "index_orders_on_order_status_id"
     t.index ["product_id"], name: "index_orders_on_product_id"
     t.index ["user_id"], name: "index_orders_on_user_id"
@@ -73,7 +73,7 @@ ActiveRecord::Schema.define(version: 2019_12_19_072100) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "category_id"
-    t.bigint "status_id", default: 1
+    t.bigint "status_id"
     t.index ["category_id"], name: "index_products_on_category_id"
     t.index ["status_id"], name: "index_products_on_status_id"
   end
