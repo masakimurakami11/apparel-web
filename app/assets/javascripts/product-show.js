@@ -18,6 +18,7 @@ $(function(){
 
 $(function()  {
   $(window).load(function(){
+    $("body").css('overflow', 'hidden');
     setTimeout(function(){
       $('.product-detail__image-first-space').fadeIn(1000);
       $('.product-detail__image-other').fadeIn(1500);
