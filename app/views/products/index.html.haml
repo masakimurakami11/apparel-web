@@ -9,7 +9,7 @@
   .products-space
     - @products.each do |product|
       = link_to product_path(product), class: 'product' do
-        = image_tag("#{product.images[0].image}", class: 'product-image')
+        = image_tag("/#{product.images[0].image}", class: 'product-image')
         .product-name
           = product.name
         .product-price
