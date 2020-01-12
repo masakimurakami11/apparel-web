@@ -46,8 +46,7 @@ $(function()  {
 $(function(){
   $('.cart-btn').click(function(){
     if ($('.count-space').val() === '0'){
-      alert('COUNT　PLEASE　ENTER ');
-      $('.count-name').css('color', 'red');
+      alert('COUNTを入力してください');
       return false;
     }
   });
@@ -56,8 +55,7 @@ $(function(){
 $(function(){
   $('.cart-btn').click(function(){
     if ($('.size-space').val() === '--'){
-      alert('SIZE　PLEASE　ENTER ');
-      $('.size-name').css('color', 'red');
+      alert('SIZEを入力してください');
       return false;
     }
     
@@ -67,33 +65,8 @@ $(function(){
 $(function(){
   $('.cart-btn').click(function(){
     if ($('.color-space').val() === '--'){
-      alert('COLOR　PLEASE　ENTER ');
-      $('.color-name').css('color', 'red');
+      alert('COLORを入力してください');
       return false;
-    }
-  });
-})
-
-$(function(){
-  $('.cart-btn').click(function(){
-    if ($('.count-space').val() !== '0'){
-      $('.count-name').css('color', 'black');
-    }
-  });
-})
-
-$(function(){
-  $('.cart-btn').click(function(){
-    if ($('.size-space').val() !== '--'){
-      $('.size-name').css('color', 'black');
-    }
-  });
-})
-
-$(function(){
-  $('.cart-btn').click(function(){
-    if ($('.color-space').val() !== '--'){
-      $('.color-name').css('color', 'black');
     }
   });
 })
