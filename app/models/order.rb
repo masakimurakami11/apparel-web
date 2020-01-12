@@ -3,9 +3,9 @@ class Order < ApplicationRecord
   belongs_to :user
   has_many :order_statuses
 
-  # validates :count, presence: true, numericality: {only_integer: true, greater_than_or_equal_to: 1}
-  # validates :size_id, presence: true
-  # validates :color_id, presence: true
+  validates :count, presence: true
+  validates :size, presence: true
+  validates :color, presence: true
 
 
   enum size:{
