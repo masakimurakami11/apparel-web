@@ -55,7 +55,7 @@ $(function(){
 
 $(function(){
   $('.cart-btn').click(function(){
-    if ($('.size-space').val() === '0'){
+    if ($('.size-space').val() === '--'){
       alert('SIZE　PLEASE　ENTER ');
       $('.size-name').css('color', 'red');
       return false;
@@ -66,7 +66,7 @@ $(function(){
 
 $(function(){
   $('.cart-btn').click(function(){
-    if ($('.color-space').val() === '0'){
+    if ($('.color-space').val() === '--'){
       alert('COLOR　PLEASE　ENTER ');
       $('.color-name').css('color', 'red');
       return false;
