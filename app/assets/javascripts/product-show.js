@@ -84,7 +84,7 @@ $(function(){
 
 $(function(){
   $('.cart-btn').click(function(){
-    if ($('.size-space').val() !== '0'){
+    if ($('.size-space').val() !== '--'){
       $('.size-name').css('color', 'black');
     }
   });
@@ -92,7 +92,7 @@ $(function(){
 
 $(function(){
   $('.cart-btn').click(function(){
-    if ($('.color-space').val() !== '0'){
+    if ($('.color-space').val() !== '--'){
       $('.color-name').css('color', 'black');
     }
   });
